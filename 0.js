@@ -17,7 +17,12 @@
 function nama_Function(arr) {
     let bool=true;
     for (let i = 0; i < arr.length; i++) {
-        typeof arr[i] === 'number' ? arr[i] = -Math.abs(arr[i]):bool = false;
+        if(typeof arr[i] === 'number'){
+            arr[i] = -Math.abs(arr[i])
+        }else{
+            bool = false
+            break;
+        }
     }
     bool==true?console.log(arr):alert("ada yg bukan int");
 }

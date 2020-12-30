@@ -28,8 +28,12 @@ function nama_Function(arr) {
     for (let i = 0; i < arr.length; i++) {
         if(typeof arr[i] === 'number' ){
             Math.sign(arr[i])==1 || Math.sign(arr[i])==0 ? temp[0]*=arr[i]:temp[1]+=arr[i];
-        }else{ bool = false}
+            console.log(i)
+        }else{ 
+            bool = false
+            break;
+        }
     }
     bool==true?console.log(temp):alert("ada yg bukan number");
 }
-nama_Function([1,2,3,4,5, -1,-2,-3,-4,-5])
+nama_Function([1,2,3,4,"5", -1,-2,-3,-4,-5])
