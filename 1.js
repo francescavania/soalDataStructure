@@ -27,7 +27,7 @@ function nama_Function(arr) {
     let bool=true,temp=[1,0]
     for (let i = 0; i < arr.length; i++) {
         if(typeof arr[i] === 'number' ){
-            Math.sign(arr[i])==1 || Math.sign(arr[i])==0 ? temp[0]*=arr[i]:temp[1]+=arr[i];
+            arr[i]>=0 ? temp[0]*=arr[i]:temp[1]+=arr[i];
         }else{ 
             bool = false
             break;
