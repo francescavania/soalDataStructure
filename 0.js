@@ -18,7 +18,7 @@ function nama_Function(arr) {
     let bool=true;
     for (let i = 0; i < arr.length; i++) {
         if(typeof arr[i] === 'number'){
-            arr[i] = -Math.abs(arr[i])
+            arr[i] *= -1
         }else{
             bool = false
             break;
